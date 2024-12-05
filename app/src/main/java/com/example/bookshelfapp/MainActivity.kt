@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         if (!::noInternetDialog.isInitialized || !noInternetDialog.isShowing) {
             val builder = AlertDialog.Builder(this)
             builder.setTitle("No Internet Connection")
-            builder.setMessage("This app requires internet access. Please enable it in your device settings.")
+            builder.setMessage("Connect to Internet")
             builder.setPositiveButton("Settings") { _, _ ->
                 val intent = Intent(android.provider.Settings.ACTION_WIFI_SETTINGS)
                 startActivity(intent)
